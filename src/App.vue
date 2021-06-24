@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+    <div class="bg-gray-100 min-h-screen sans-serif flex flex-col flex-1">
+        <TopNav></TopNav>
+        <main class="px-8 flex flex-grow flex-col flex-1">
+            <router-view></router-view>
+        </main>
+        <Footer></Footer>
+    </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import TopNav from "./components/navigation/TopNav.vue";
+import Header from "./components/navigation/Header.vue";
+import Footer from "./components/navigation/Footer.vue";
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+      TopNav,
+      Header,
+      Footer,
   }
 })
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
-}
 </style>
