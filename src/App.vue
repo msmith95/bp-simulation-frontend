@@ -9,18 +9,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import {defineComponent} from 'vue'
 import TopNav from "./components/navigation/TopNav.vue";
 import Header from "./components/navigation/Header.vue";
 import Footer from "./components/navigation/Footer.vue";
 
 export default defineComponent({
-  name: 'App',
-  components: {
-      TopNav,
-      Header,
-      Footer,
-  }
+    name: 'App',
+    components: {
+        TopNav,
+        Header,
+        Footer,
+    }
 })
 </script>
 

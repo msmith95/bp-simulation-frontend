@@ -6,10 +6,14 @@
     </header>
     <div class="py-6 flex flex-col flex-1 justify-between">
         <div class="flex flex-col flex-1 relative">
-            <h1 class="text-2xl text-center mb-8" v-if="currentQuestionIndex !== totalQuestions">During the past TWO (2) WEEKS, how much (or how often) have you been bothered by the following problems?</h1>
-            <transition-group name="slide" tag="div" class="mx-auto w-1/3 relative" v-if="currentQuestionIndex !== totalQuestions">
-                <div class="w-full absolute" v-for="question in [currentQuestionIndex]" :key="currentQuestion.question_id">
-                    <ScreenerQuestion :answers="answerOptions" :question="currentQuestion" @answer="handleAnswer"></ScreenerQuestion>
+            <h1 class="text-2xl text-center mb-8" v-if="currentQuestionIndex !== totalQuestions">During the past TWO (2)
+                WEEKS, how much (or how often) have you been bothered by the following problems?</h1>
+            <transition-group name="slide" tag="div" class="mx-auto w-1/3 relative"
+                              v-if="currentQuestionIndex !== totalQuestions">
+                <div class="w-full absolute" v-for="question in [currentQuestionIndex]"
+                     :key="currentQuestion.question_id">
+                    <ScreenerQuestion :answers="answerOptions" :question="currentQuestion"
+                                      @answer="handleAnswer"></ScreenerQuestion>
                 </div>
             </transition-group>
             <div class="card" v-else>

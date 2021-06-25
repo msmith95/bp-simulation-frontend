@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import {ref} from "vue";
 import axios from "axios";
 
 export interface Screener {
@@ -113,7 +113,7 @@ export function useScreenerService() {
     const fetchScreener = async (id: string) => {
         loading.value = true;
         try {
-            const {data}: {data: Screener} = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/screeners/${id}`)
+            const {data}: { data: Screener } = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/screeners/${id}`)
             screener.value = data;
             loading.value = false;
         } catch (e) {
