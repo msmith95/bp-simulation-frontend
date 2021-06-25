@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-100 min-h-screen sans-serif flex flex-col flex-1">
+    <div class="bg-gray-100 min-h-screen sans-serif flex flex-col flex-1 overflow-x-hidden">
         <TopNav></TopNav>
         <main class="px-8 flex flex-grow flex-col flex-1">
             <router-view></router-view>
