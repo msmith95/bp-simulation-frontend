@@ -30,7 +30,7 @@ export default defineComponent({
     setup(props) {
         const {currentQuestion, totalQuestions} = toRefs(props)
 
-        const progressWidth = computed(() => ((currentQuestion.value - 1) / (totalQuestions.value)) * 100)
+        const progressWidth = computed(() => ((currentQuestion.value) / (totalQuestions.value + 1)) * 100)
 
         return {
             progressWidth

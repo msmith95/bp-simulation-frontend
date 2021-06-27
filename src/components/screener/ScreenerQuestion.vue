@@ -1,6 +1,6 @@
 <template>
     <div class="card w-full">
-        <div class="card-body p-8">
+        <div class="card-body p-8" v-if="question !== undefined">
             <h6 class="text-xl text-center mb-6">{{ question.title }}</h6>
 
             <div class="flex flex-col">
@@ -21,7 +21,6 @@ export default defineComponent({
     props: {
         question: {
             type: Object as PropType<ScreenerQuestion>,
-            required: true
         },
         answers: {
             type: Array as PropType<Array<ScreenerAnswerOption>>,
