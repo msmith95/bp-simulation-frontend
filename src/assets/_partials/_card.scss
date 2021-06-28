@@ -1,0 +1,7 @@
+.card {
+  @apply bg-white inline-block relative shadow-lg;
+}
+
+.card-body {
+  @apply p-4;
+}

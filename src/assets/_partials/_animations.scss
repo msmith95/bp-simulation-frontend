@@ -1,0 +1,31 @@
+.slide-leave-active, .slide-enter-active {
+  //transition: 600ms;
+}
+
+.slide-enter-to {
+  //transform: translate(100%, 0);
+  animation: slide-in 600ms forwards;
+}
+
+.slide-leave-to {
+  //transform: translate(-300%, 0);
+  animation: slide-out 600ms forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
