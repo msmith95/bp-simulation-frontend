@@ -1,4 +1,4 @@
-# Blueprint Coding Simulation Backend
+# Blueprint Coding Simulation Frontend
 
 Hosted application link: [here](https://bp-simulation.michaeldsmithjr.com)
 
